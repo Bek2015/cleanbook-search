@@ -16,7 +16,7 @@ public class RoomSearchController {
 	@Autowired
 	private RoomSearchService roomService;
 
-	@GetMapping(path = "/rooms")
+	@GetMapping(path = "api/rooms")
 	public List<Room> findAll(){
 		
 		return roomService.findAll();
